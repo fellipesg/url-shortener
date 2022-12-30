@@ -10,6 +10,9 @@ DB_DATABASE=url
 DB_USERNAME=root
 DB_PASSWORD=yourPassword
 
+In your terminal, type: composer global require "laravel/installer=~1.1". It will Install Laravel
+In your terminal, type: composer install
+
 In your terminal, type: php artisan migrate. It will migrate the database;
 In your terminal, type: php artisan cache:clear. It will clear any caches;
 
@@ -23,3 +26,6 @@ Then run php artisan serve to start your server.
 127.0.0.1:8000/63af5763152a7 -> get endpoint to redirect to the full url
 
 127.0.0.1:8000/top -> get endpoint to retrieve the top 100 most visited urls
+
+
+These routes are in web.php
