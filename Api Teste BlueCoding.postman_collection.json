@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "5c824979-e33e-488d-a444-c73ec8c2bc10",
+		"name": "Api Teste BlueCoding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "705226"
+	},
+	"item": [
+		{
+			"name": "Create Shorten Url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://en.wikipedia.org/wiki/Genghis_Khan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/shorten",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Redirect",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/63af55782f6dd",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"63af55782f6dd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Top Visits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/top",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"top"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
